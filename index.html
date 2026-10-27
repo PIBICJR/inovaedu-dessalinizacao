@@ -58,6 +58,46 @@ body{background:linear-gradient(180deg,rgba(2,28,54,.94),rgba(4,65,94,.92)),url(
 .future-video-section .future-shorts-player{position:relative;width:min(100%,360px);aspect-ratio:9/16;margin:0 auto;overflow:hidden;border-radius:20px;background:#061d2d;box-shadow:0 20px 46px rgba(6,35,54,.16)}
 .future-video-section .future-shorts-player iframe{display:block;position:absolute;inset:0;width:100%;height:100%;border:0}
 @media(max-width:480px){.future-video-section .future-shorts-player{width:min(100%,320px);border-radius:16px}}
+
+/* Contato: painel claro, arredondado e campos legíveis */
+#contactForm.form{
+  width:100%;max-width:720px;margin:0;
+  padding:clamp(22px,3.3vw,38px);
+  border:1px solid #d2e7ef!important;
+  border-radius:26px!important;
+  background:linear-gradient(145deg,#ffffff 0%,#f0f9fc 100%)!important;
+  box-shadow:0 18px 45px rgba(12,58,80,.11);
+  display:grid;gap:20px;
+}
+#contactForm.form label{
+  display:grid;gap:8px;
+  color:#174357!important;font-size:14px;font-weight:750;
+}
+#contactForm.form input,#contactForm.form select,#contactForm.form textarea{
+  display:block;width:100%;min-width:0;
+  color:#193e51!important;background:#ffffff!important;
+  border:1.5px solid #c4dfe9!important;
+  border-radius:14px!important;padding:15px 16px;
+  font:inherit;font-size:15px;line-height:1.5;
+  box-shadow:0 2px 7px rgba(8,60,82,.035);
+  transition:border-color .2s,box-shadow .2s;
+}
+#contactForm.form input::placeholder,#contactForm.form textarea::placeholder{color:#7593a3;opacity:1}
+#contactForm.form input:focus,#contactForm.form select:focus,#contactForm.form textarea:focus{
+  outline:none;border-color:#16a8ca!important;
+  box-shadow:0 0 0 4px rgba(31,185,210,.16);
+}
+#contactForm.form textarea{min-height:170px;resize:vertical}
+#contactForm.form button[type="submit"],#contactForm.form button{
+  width:100%;border:0!important;border-radius:14px!important;
+  min-height:54px;padding:14px 20px;
+  color:#07384d!important;background:#51d2df!important;
+  font-weight:800;box-shadow:0 7px 17px rgba(25,156,180,.15);
+  transition:background .2s,transform .2s;
+}
+#contactForm.form button:hover{background:#39bfce!important;transform:translateY(-1px)}
+#contactForm.form .status{margin:0;color:#126e83!important}
+@media(max-width:760px){#contactForm.form{border-radius:20px!important;padding:20px;gap:17px}}
 </style>
 <style>
 /* Logotipo oficial incorporado no próprio arquivo HTML. */
